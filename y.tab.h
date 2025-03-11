@@ -57,7 +57,8 @@ extern int yydebug;
     NAME = 258,                    /* NAME  */
     NUMBER = 259,                  /* NUMBER  */
     EQ = 260,                      /* EQ  */
-    UMINUS = 261                   /* UMINUS  */
+    SQRT = 261,                    /* SQRT  */
+    UMINUS = 262                   /* UMINUS  */
   };
   typedef enum yytokentype yytoken_kind_t;
 #endif
@@ -69,7 +70,8 @@ extern int yydebug;
 #define NAME 258
 #define NUMBER 259
 #define EQ 260
-#define UMINUS 261
+#define SQRT 261
+#define UMINUS 262
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
@@ -81,7 +83,7 @@ union YYSTYPE
   struct symtab *symp;
   
 
-#line 85 "y.tab.h"
+#line 87 "y.tab.h"
 
 };
 typedef union YYSTYPE YYSTYPE;

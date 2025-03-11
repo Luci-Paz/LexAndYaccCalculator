@@ -22,6 +22,7 @@ A     [a-zA-Z]
 AD    [a-zA-Z0-9]
 
 %%
+sqrt								{return SQRT;}
 
 ({D}+|({D}*\.{D}+)([eE][-+]?{D}+)?) {yylval.dval = atof(yytext); return NUMBER;}
 
