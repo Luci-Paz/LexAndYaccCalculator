@@ -1,0 +1,72 @@
+331 Calculator
+(type ? for help and . to exit)
+
+>> 1
+
+>> 0
+
+>> 3
+
+>> 6
+
+>> 6
+
+>> 1
+
+>> 10
+
+>> 10
+
+>> 14
+
+>> 20
+
+>> 100
+
+>> 100
+
+>> 101
+
+>> 1
+
+>> 0
+
+>> 0
+
+>> 1
+
+>> 1
+
+>> 0
+
+>> -0.841471
+
+>> 0.841471
+
+>> 1
+
+>> -0.00159265
+
+>> 8
+
+>> 11.6458
+
+>> 4
+
+>> 6
+
+>> 6
+
+>> 9
+
+>> 49
+
+>> Enter an expression in infix notation followed by a newline.
+Arithmetic functions include +, -, *, /, ^, %, and sqrt.
+Comparison functions include <, >, and ==.
+Trig functions include sin, cos, and tan.
+Assign a value to a variable using = (such as x= 5).
+Type . to exit.  Syntax errors will terminate the
+program, so be careful.
+
+>> Exiting 331 calc
