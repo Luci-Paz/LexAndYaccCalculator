@@ -36,6 +36,7 @@
 %token <symp> NAME
 %token <dval> NUMBER
 %token EQ SQRT
+%token SIN COS TAN
 
 /* The folowing declarations specify the precedence and associativity
    of our operators. The operators -, +, * and / to be left
@@ -49,7 +50,7 @@
 %left '-' '+'
 %left '*' '/' '%'
 %left '^'
-%nonassoc SQRT
+%nonassoc SQRT SIN COS TAN
 %nonassoc UMINUS     /* highest precedence */
 
 
@@ -91,6 +92,9 @@ expr:  NUMBER					{ $$ = $1; }
 	   | expr '%' expr			{ $$ = fmod($1, $3); }
 	   | expr '^' expr			{ $$ = pow($1, $3); }
 	   | SQRT expr				{ $$ = sqrt($2); }
+	   | SIN expr 				{ $$ = sin($2);}
+	   | COS expr				{ $$ = cos($2);}
+	   | TAN expr				{ $$ = tan($2);}
        | '-' expr %prec UMINUS	{ $$ = -$2; }
        | '(' expr ')'			{ $$ = $2; }
 ;

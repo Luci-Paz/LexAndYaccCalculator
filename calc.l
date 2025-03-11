@@ -24,6 +24,12 @@ AD    [a-zA-Z0-9]
 %%
 sqrt								{return SQRT;}
 
+sin									{return SIN;}
+
+cos									{return COS;}
+
+tan									{return TAN;}
+
 ({D}+|({D}*\.{D}+)([eE][-+]?{D}+)?) {yylval.dval = atof(yytext); return NUMBER;}
 
 {A}{AD}*                            {struct symtab *sp = symlook(yytext); yylval.symp = sp; return NAME;}
