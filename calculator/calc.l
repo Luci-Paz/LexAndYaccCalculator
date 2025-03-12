@@ -22,13 +22,13 @@ A     [a-zA-Z]
 AD    [a-zA-Z0-9]
 
 %%
-sqrt								{return SQRT;}
+[sS][qQ][rR][tT]					{return SQRT;}
 
-sin									{return SIN;}
+[sS][iI][nN]						{return SIN;}
 
-cos									{return COS;}
+[cC][oO][sS]						{return COS;}
 
-tan									{return TAN;}
+[tT][aA][nN]						{return TAN;}
 
 ({D}+|({D}*\.{D}+)([eE][-+]?{D}+)?) {yylval.dval = atof(yytext); return NUMBER;}
 
