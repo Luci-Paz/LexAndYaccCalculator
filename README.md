@@ -1,12 +1,22 @@
 # LexAndYaccCalculator
-LexAndYaccCalculator is a basic calculator utilizing lex and yacc
+LexAndYaccCalculator utilizes lex and yacc to create a basic calculator.
 
-# Usage
+<br>
+
+## Usage
 
 - Need to have Lex, Yacc and Make installed
 - Program works on UNIX terminals
+<br>
 
 ### Running the calculator:
+Have to run the make command first:
+- Compiles the code
+
+```Bash
+user:fileLocation$ make
+```
+Then run the calculator program 
 ```Bash
 user:fileLocation$ ./calc
 331 Calculator
@@ -14,6 +24,7 @@ user:fileLocation$ ./calc
 
 >> [enter comands here]
 ```
+<br>
 
 ### Command List: 
 
