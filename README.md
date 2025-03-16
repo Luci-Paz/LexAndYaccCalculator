@@ -41,18 +41,18 @@ Assume A, B and C are all variables containing real numbers
 
 >> A / B                  #Returns A divided by B
 
->> A % B                  #Returns 
+>> A % B                  #Returns the modulus of A mod B
 
->> A ^ B                  #
+>> A ^ B                  #Returns the value of A to the power of B
 
->> sqrt A                 #
+>> sqrt A                 #Returns the square root of A
 
->> sin A                  #
+>> sin A                  #Sin function of A in radians
 
->> cos A                  #
+>> cos A                  #Cos function of A in radians
 
->> tan A                  #
+>> tan A                  #Tan function of A in radians
 
->> -A                     #
+>> -A                     #Negate the value of A (make it negative)
 
->> A + (B + C)            #
+>> A + (B + C)            #Values in parentheses are copmuted first 
